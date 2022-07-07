@@ -10,7 +10,9 @@ import sys
 
 # Complete the solve function below.
 def solve(s):
-    return " ".join([i.capitalize() for i in s.split()])
+    words = s.split(" ")
+    capitalized_words = [w.capitalize() for w in words]
+    return " ".join(capitalized_words)
     
 
 if __name__ == '__main__':
@@ -23,3 +25,4 @@ if __name__ == '__main__':
     fptr.write(result + '\n')
 
     fptr.close()
+
